@@ -152,7 +152,7 @@ If you like this project kindly give it a star⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
+<!-- ACKNOWLEDGEMENT -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
