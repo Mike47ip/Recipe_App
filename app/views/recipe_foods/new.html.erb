@@ -1,5 +1,6 @@
-<div class="">
+<div style="display: flex; justify-content: center;">
   <h2 class="">Add Ingredient</h2>
+  <div>
   <%= form_with(model: @recipe_food, url: recipe_recipe_foods_path(@recipe), method: :post, html: { class: "" }) do |f| %>
     <div class="">
       <%= f.label :food_id, 'Food' %>
@@ -13,4 +14,5 @@
       <%= f.submit 'Add ingredient' %>
     </div>
   <% end %>
+  </div>
 </div>
