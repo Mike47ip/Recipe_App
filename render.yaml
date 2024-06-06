@@ -21,5 +21,4 @@ services:
         sync: false
       - key: WEB_CONCURRENCY
         value: 2 # sensible default
-    build:
-      node: 20.3.0 
+
