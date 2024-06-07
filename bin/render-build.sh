@@ -4,7 +4,7 @@ set -o errexit
 
 # Install Node.js
 curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
-apt-get install -y nodejs
+# apt-get install -y nodejs
 
 # Install bundler if it's not already installed
 gem install bundler
