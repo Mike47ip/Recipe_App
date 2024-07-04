@@ -2,9 +2,16 @@
 # Exit on error
 set -o errexit
 
-# Install Node.js
-curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
-apt-get install -y nodejs
+# Install NVM (Node Version Manager)
+export NVM_DIR="$HOME/.nvm"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+# Load NVM
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Install and use Node.js
+nvm install 20
+nvm use 20
 
 # Install bundler if it's not already installed
 gem install bundler
