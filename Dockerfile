@@ -18,7 +18,7 @@ FROM base as build
 
 # Install packages needed to build gems
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential git libpq-dev libvips pkg-config
+    apt-get install --no-install-recommends -y build-essential git libpq-dev libvips pkg-config dos2unix
 
 # Install application gems
 COPY Gemfile Gemfile.lock ./
@@ -31,6 +31,9 @@ COPY . .
 
 # Ensure bin/rails has executable permissions
 RUN chmod +x bin/rails
+
+# Convert line endings to Unix (LF) format
+RUN dos2unix bin/rails
 
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
