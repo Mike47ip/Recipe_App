@@ -31,6 +31,10 @@ gem 'jbuilder'
 # add mini_racer as a fallback
 gem 'mini_racer', platforms: :ruby
 
+# add environmental variables
+gem 'dotenv-rails'
+
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
